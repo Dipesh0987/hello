@@ -136,6 +136,10 @@ nav ul li a:hover{
     font-size: 1.5rem;
     color: #242485;
 }
+.fifth i{
+    font-size: 1.5rem;
+    color: #03084a;
+}
 .project{
     display: flex;
     justify-content: space-around;
@@ -190,4 +194,22 @@ nav ul li a:hover{
 .intro a:hover{
     font-size: 1.4rem;
     color: blue;
+}
+.intro ul{
+    padding-left: 22px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 76, 129);
+    padding: 23px;
+    margin: 18px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.portfolio:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
 }
