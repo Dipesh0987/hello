@@ -106,15 +106,12 @@ nav ul li a:hover{
     color: #242485;
 }
 .interest{
-    /* width: 100%;
-    border-collapse: collapse;
-    border-radius: 10px;
-    margin: 20px 0; */
-    font-family: Arial, sans-serif;
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.interest div{
+    width: 30%;
 }
 .interests{
     display: flex;
@@ -125,5 +122,72 @@ nav ul li a:hover{
     padding: 23px;
     margin: 18px;
     border-radius: 15px;
-    border: solid;
+    border: 1px solid black;
+}
+.interests:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+}
+.fifth{
+    max-width: 80vw;
+    margin: auto;
+}
+.fifth b{
+    font-size: 1.5rem;
+    color: #242485;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(76, 76, 129);
+    padding: 23px;
+    margin: 18px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.intro{
+    text-align: left;
+    padding: 10px;
+}
+.intro p{
+    font-size: 1.5rem;
+    padding-top: 9px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail img{
+    width: 80%;
+    margin: 10px 0; 
+}
+.weather:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3px);
+}
+.intro a{
+    text-decoration: none;
+    background-color: #838080;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+.intro a:hover{
+    font-size: 1.4rem;
+    color: blue;
 }
