@@ -155,6 +155,7 @@ nav ul li a:hover{
     margin: 18px;
     border-radius: 15px;
     border: 1px solid black;
+    transition: transform ease-in-out 0.5s;
 }
 .content{
     display: flex;
@@ -178,10 +179,11 @@ nav ul li a:hover{
 .detail img{
     width: 80%;
     margin: 10px 0; 
+    
 }
 .weather:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.01);
 }
 .intro a{
     text-decoration: none;
@@ -208,10 +210,11 @@ nav ul li a:hover{
     margin: 18px;
     border-radius: 15px;
     border: 1px solid black;
+    transition: transform 0.5s ease-in-out;
 }
 .portfolio:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.01);
 }
 .forms{
     max-width: 80vw;
@@ -304,4 +307,153 @@ footer{
 }
 footer p{
     font-size: 1.1rem;
+}
+/* =============== Tablets =============== */
+@media (max-width: 992px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .firstsection div {
+        width: 80%;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .rightsection img {
+        width: 60%;
+    }
+
+    .interest {
+        flex-wrap: wrap;
+    }
+
+    .interest div {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail img {
+        width: 90%;
+    }
+
+    .contactme {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contactme div {
+        width: 80%;
+    }
+}
+
+/* =============== Mobile =============== */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .leftsection {
+        font-size: 1.8rem;
+    }
+
+    .rightsection img {
+        width: 75%;
+    }
+
+    .second, .third, .fourth, .fifth, .forms {
+        max-width: 90vw;
+    }
+
+    .interest div {
+        width: 90%;
+    }
+
+    .interests {
+        width: 100%;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .weather, .portfolio {
+        width: 100%;
+    }
+
+    .contactme div {
+        width: 90%;
+    }
+
+    form input, form textarea {
+        font-size: 1rem;
+    }
+
+}
+/* =============== Small Mobile =============== */
+@media (max-width: 480px) {
+
+    .leftsection {
+        font-size: 1.4rem;
+    }
+
+    .rightsection img {
+        width: 85%;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .interest div {
+        width: 100%;
+    }
+
+    .academic th, .academic td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        justify-content: center;
+    }
 }
