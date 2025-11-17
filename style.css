@@ -230,7 +230,7 @@ nav ul li a:hover{
     justify-content: space-around;
     align-items: center;
     gap: 40px;
-    margin: -40px 0;
+    margin: -40px 0 0 0;
 }
 .contactme div{
     width: 40%;
@@ -304,6 +304,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(70 70 118);
+    padding: 30px 0;
 }
 footer p{
     font-size: 1.1rem;
