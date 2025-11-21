@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<!--     <video autoplay loop muted id="vback">
+        <source src="boudhanath.mp4" type="video/mp4">Your browser doesn't support video tag
+    </video> -->
     <header>
         <nav>
             <div class="left">Dipesh's Portfolio</div>
@@ -33,7 +36,6 @@
             </div>
             <div class="rightsection">
                 <img src="photo.jpg" alt="Profile">
-            </div>
             </div>
         </section>
         <br>
@@ -187,14 +189,17 @@
                 </div>
                 <div class="feedback">
                 <p>Contact me:</p>
-                <form>                    
-                    <input type="text" id="Name" name="Name" placeholder="Name">
+                <form id="contactForm">                    
+                    <input type="text" id="name" name="Name" placeholder="Name" required>
                     <br>
-                    <input type="text" id="Email" name="Email" placeholder="Email">
+                    <input type="text" id="email" name="Email" placeholder="Email" required>
                     <br>
-                    <textarea name="Message" id="Message" placeholder="Write your message here" required></textarea>
+                    <textarea name="Message" id="message" placeholder="Write your message here" required></textarea>
                     <br>
                     <button>Send</button>
+
+                    <p id="error" style="color: red;"></p>
+                    <p id="success" style="color: green;"></p>
                 </form>
                 </div>
             </div>
@@ -203,5 +208,7 @@
     <footer>
         <p>&copy; 2025 Dipesh Kishor Chhetri. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
